@@ -1,0 +1,64 @@
+@import './reset.css';
+
+:root {
+    --white: #ffffff;
+    --orange: #ff3d00;
+    --burgerOrange: #ff4f17;
+    --black: #000000;
+    --darkGray: #2b2b2b;
+    --veryDarkGray: #101010;
+    --mediumGray: #616161;
+    --darkCharcoal: #363535;
+    --slateGray: #5d5d5d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--veryDarkGray);
+    overscroll-behavior-y: none;
+    user-select: none;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    will-change: transform;
+}
+
+a,
+p,
+span,
+ul,
+li {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--white);
+    font-family: 'IBMPlexSansLight';
+}
+
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+@media screen and (max-width: 62.5em) {
+    html {
+        font-size: 50%;
+    }
+}

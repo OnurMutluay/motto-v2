@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16rem;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.marquee h3 {
+    font-family: 'MottoSTD';
+    font-size: 5.6rem;
+}
+
+.image {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.image p {
+    margin-top: -5rem;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    width: 65%;
+    text-align: center;
+}
+
+@media screen and (max-width: 40em) {
+    .image p {
+        width: 100%;
+        font-size: 3rem;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn {
+    position: absolute;
+    bottom: 10rem;
+    z-index: 997;
+}

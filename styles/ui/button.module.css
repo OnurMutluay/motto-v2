@@ -1,0 +1,55 @@
+.container {
+    padding: 2.5rem;
+    border: 0.4rem var(--darkCharcoal) solid;
+    background-color: var(--veryDarkGray);
+    border-radius: 4.5rem;
+    align-items: center;
+    display: inline-flex;
+    gap: 2.5rem;
+    font-size: 2.6rem;
+    transition: 200ms all;
+    font-family: 'MottoSTD';
+    width: fit-content;
+}
+
+.container svg {
+    transition: 200ms all;
+    color: var(--orange);
+}
+
+.container:hover {
+    background-color: var(--orange);
+    gap: 5rem;
+    color: var(--veryDarkGray);
+    border: 0.4rem var(--veryDarkGray) solid;
+}
+
+.container:hover svg {
+    transform: rotate(-45deg);
+    transition: 200ms all;
+    color: var(--veryDarkGray);
+}
+
+.containerInline {
+    align-items: center;
+    display: inline-flex;
+    gap: 1.5rem;
+    font-size: 2.6rem;
+    transition: 200ms all;
+    font-family: 'MottoSTD';
+    width: fit-content;
+}
+
+.containerInline svg {
+    transition: 200ms all;
+    color: var(--orange);
+}
+
+.containerInline:hover {
+    gap: 2.2rem;
+}
+
+.containerInline:hover svg {
+    transform: rotate(-45deg);
+    transition: 200ms all;
+}

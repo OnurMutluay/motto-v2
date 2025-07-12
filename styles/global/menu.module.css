@@ -1,0 +1,185 @@
+.menu {
+    width: 100%;
+    height: 12rem;
+    background: linear-gradient(180deg, var(--veryDarkGray) 0%, rgba(205, 213, 223, 0) 100%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    z-index: 998;
+}
+
+.burgerAndLogo {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    z-index: 999;
+}
+
+.burgerAndLogo svg {
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+
+.socials li {
+    font-size: 1.7rem;
+}
+
+.socialsMobile {
+    display: flex;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+
+.socialsMobile li {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+/* FULL SIZE MENU */
+.menuContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--orange);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    position: fixed;
+    z-index: 998;
+    padding-left: 6rem;
+    gap: 5rem;
+    transition: 500ms all;
+}
+
+.menuContainer img.bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.openBurger {
+    cursor: pointer;
+    margin-top: 4.5rem;
+    width: 4rem;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 4rem;
+    width: 70%;
+}
+
+.linksAndContacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+}
+
+.menuLinks {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.menuLinks li a {
+    font-size: 5rem;
+    color: var(--black);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 4rem;
+    width: 40%;
+}
+
+.contact li {
+    font-size: 2.4rem;
+    color: var(--black);
+    line-height: 3.8rem;
+}
+
+.language {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    gap: 5rem;
+    margin-top: auto;
+    margin-bottom: 8rem;
+}
+
+.socials li {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+@media screen and (max-width: 109em) {
+    .menuContent {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 75em) {
+    .menuContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .menuContainer img.bg {
+        display: none;
+    }
+
+    .menuContent {
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .linksAndContacts {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 62.5em) {
+    .menu {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .menuContainer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .burgerAndLogo {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

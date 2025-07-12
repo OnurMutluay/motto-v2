@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 16rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container h3 {
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    font-family: 'MottoSTD';
+    text-align: center;
+}
+
+.stackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stackContainer img {
+    transform: scale(0.5);
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        padding: 0;
+    }
+
+    .stackContainer {
+        width: 100%;
+    }
+}

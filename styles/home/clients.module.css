@@ -1,0 +1,11 @@
+.marquee {
+    display: flex;
+    margin-top: 12rem;
+    align-items: center;
+}
+
+.marquee img {
+    border-radius: 1rem;
+    transform: scale(0.5);
+    margin-left: 4rem;
+}

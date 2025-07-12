@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin-top: 16rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.description h3 {
+    font-family: 'MottoSTD';
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+}
+
+.description p {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+}
+
+.stats {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    gap: 10rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat h3 {
+    font-family: 'MottoSTD';
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+}
+
+.stat p {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10rem;
+    }
+
+    .description {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .stats {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

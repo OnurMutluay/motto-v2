@@ -1,0 +1,72 @@
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.grid {
+    display: grid;
+    gap: 4rem;
+    row-gap: 7rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+}
+
+.caseCard {
+    width: 100%;
+    position: relative;
+    transition: 200ms all;
+    cursor: pointer;
+}
+
+.caseCard img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.caseCard .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.caseCard .texts h4 {
+    font-family: 'MottoSTD';
+    font-size: 3.2rem;
+}
+
+.caseCard .texts p {
+    font-size: 2.2rem;
+}
+
+.caseCard svg {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    zoom: 2;
+    color: var(--orange);
+    opacity: 0;
+    transition: 300ms all;
+}
+
+.caseCard:hover {
+    transform: translateY(-1rem);
+}
+
+.caseCard:hover svg {
+    opacity: 1;
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 40em) {
+    .grid {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+}

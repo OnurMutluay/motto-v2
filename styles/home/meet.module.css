@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-top: 18rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.marquee h3 {
+    font-family: 'MottoSTD';
+    font-size: 5.6rem;
+}
+
+.container p {
+    width: 65%;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+}
+
+@media screen and (max-width: 62.5em) {
+    .container p {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

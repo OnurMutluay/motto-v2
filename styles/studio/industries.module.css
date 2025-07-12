@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 5rem;
+    margin-top: 16rem;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.descriptionContainer h3 {
+    font-family: 'MottoSTD';
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+}
+
+.descriptionContainer p {
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+}
+
+ul.serviceList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: auto;
+}
+
+ul.serviceList li {
+    font-size: 4.2rem;
+    list-style: circle;
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .descriptionContainer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container svg {
+        margin: 0 auto;
+    }
+
+    ul.serviceList {
+        margin-top: 8rem;
+    }
+}

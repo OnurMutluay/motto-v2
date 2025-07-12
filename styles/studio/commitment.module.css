@@ -1,0 +1,34 @@
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.container h3 {
+    width: 75%;
+    font-size: 4.2rem;
+    line-height: 5.6rem;
+    font-family: 'MottoSTD';
+}
+
+.container p {
+    width: 75%;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+}
+
+@media screen and (max-width: 40em) {
+    .container h3 {
+        width: 100%;
+    }
+
+    .container p {
+        width: 100%;
+    }
+}

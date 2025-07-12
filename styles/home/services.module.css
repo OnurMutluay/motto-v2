@@ -1,0 +1,85 @@
+.container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10rem;
+    margin-top: 12rem;
+}
+
+.meet {
+    display: flex;
+    gap: 4rem;
+}
+
+.meet svg {
+    margin-top: 1rem;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.texts h3 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-family: 'MottoSTD';
+}
+
+.whatWeDo {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.whatWeDoList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 4rem;
+}
+
+.whatWeDoList li {
+    list-style-type: disc;
+    font-size: 2.6rem;
+}
+
+@media screen and (max-width: 82em) {
+    .texts h3 {
+        font-size: 3rem;
+        line-height: 4rem;
+        font-family: 'MottoSTD';
+    }
+
+    .whatWeDoList li {
+        list-style-type: disc;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 62.5em) {
+    .container {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .meet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .meet a {
+        align-self: center;
+    }
+
+    .whatWeDo {
+        justify-content: center;
+        align-items: center;
+    }
+}
