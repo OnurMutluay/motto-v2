@@ -33,3 +33,9 @@
         padding-right: 2rem;
     }
 }
+
+@media screen and (max-width: 40em) {
+    .container {
+        margin-top: 8rem;
+    }
+}
