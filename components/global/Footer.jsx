@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.links}>
-                <ul></ul>
+                <p style={{ fontSize: 18, color: '#000' }}>Motto is a Rubrec company.</p>
 
                 <ul>
                     <li>
