@@ -11,10 +11,10 @@
     display: flex;
     align-items: center;
     gap: 5rem;
-    height: 12rem;
 }
 
 .marquee h3 {
     font-family: 'MottoSTD';
     font-size: 12rem;
+    line-height: 20rem;
 }
