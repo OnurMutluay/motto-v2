@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.container p {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+}
+
+.inputs {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 3rem;
+    flex-direction: column;
+}
+
+.inputs input,
+.inputs textarea {
+    background-color: transparent;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    border: none;
+    width: 100%;
+    border-bottom: 0.1rem rgba(255, 255, 255, 0.25) solid;
+    color: #fff;
+    font-size: 3rem;
+    transition: 300ms all;
+    font-family: 'IBMPlexSansLight';
+    resize: none;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+    outline: none;
+    border-bottom: 0.1rem rgba(255, 255, 255, 1) solid;
+}
+
+.container a {
+    align-self: flex-end;
+    margin-top: 3rem;
+}

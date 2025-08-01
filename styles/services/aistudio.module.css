@@ -2,11 +2,11 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 6rem;
+    gap: 10rem;
     align-items: center;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    margin-top: 16rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 22rem;
 }
 
 .container img {
@@ -30,22 +30,21 @@
     line-height: 3.6rem;
 }
 
+@media screen and (max-width: 90em) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
 @media screen and (max-width: 40em) {
     .container {
         grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .container .texts {
-        align-items: center;
-        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .container img {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
     }
 }

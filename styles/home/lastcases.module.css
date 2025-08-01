@@ -1,9 +1,9 @@
 .container {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     display: flex;
     flex-direction: column;
-    margin-top: 16rem;
+    margin-top: 22rem;
 }
 
 .container .texts {
@@ -35,13 +35,12 @@
     width: 100%;
     position: relative;
     transition: 200ms all;
-    cursor: pointer;
 }
 
 .caseCard img {
     border-radius: 1rem;
     width: 100%;
-    height: 50rem;
+    height: auto;
     object-fit: cover;
     object-position: center;
 }
@@ -62,11 +61,14 @@
     font-size: 2.2rem;
 }
 
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .caseCard svg {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    zoom: 2;
+    zoom: 1.4;
     color: var(--orange);
     opacity: 0;
     transition: 300ms all;
@@ -81,13 +83,44 @@
     transform: rotate(-45deg);
 }
 
+@media screen and (max-width: 90em) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
 @media screen and (max-width: 40em) {
-    .container .texts {
-        margin-bottom: 6rem;
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .container .texts h2 {
+        font-size: 4.8rem;
+    }
+
+    .container .texts p {
+        font-size: 3rem;
+        line-height: 4rem;
     }
 
     .container .grid {
         grid-template-columns: 1fr;
         margin-top: 0;
+    }
+
+    .caseCard:first-child {
+        margin-top: 6rem;
+    }
+
+    .caseCard img {
+        height: 50rem;
+    }
+
+    .caseCard svg {
+        top: 85% !important;
+        right: 5%;
+        zoom: 1;
     }
 }

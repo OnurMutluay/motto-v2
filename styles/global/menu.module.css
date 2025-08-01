@@ -42,6 +42,7 @@
 
 .socialsMobile li {
     font-size: 2.2rem;
+    margin-top: 3rem;
     color: var(--black);
 }
 
@@ -49,16 +50,15 @@
 .menuContainer {
     width: 100vw;
     height: 100vh;
-    background-color: var(--orange);
+    background-color: #fff;
     left: 0;
     right: 0;
     bottom: 0;
     display: grid;
-    grid-template-columns: auto 2fr 1fr;
+    grid-template-columns: auto 2fr 1.5fr;
     position: fixed;
     z-index: 998;
-    padding-left: 6rem;
-    gap: 5rem;
+    padding-left: 11rem;
     transition: 500ms all;
 }
 
@@ -79,7 +79,7 @@
     flex-direction: column;
     gap: 4rem;
     margin-top: 4rem;
-    width: 70%;
+    width: 80%;
 }
 
 .linksAndContacts {
@@ -149,8 +149,9 @@
     }
 
     .menuContent {
-        margin-top: 3rem;
         width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .contact {
@@ -168,18 +169,49 @@
         padding-right: 2rem;
     }
 
+    .logoDiv {
+        zoom: 0.8;
+    }
+
     .socials {
         display: none;
+    }
+
+    .socialsMobile {
+        padding-top: 0rem;
+        margin-top: -4rem;
     }
 
     .menuContainer {
         padding-left: 2rem;
         padding-right: 2rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5rem;
     }
 
     .burgerAndLogo {
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100%;
+    }
+
+    .menuLinks li a {
+        font-size: 6.2rem;
+        color: var(--black);
+    }
+
+    .menuLinks {
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .contact {
+        gap: 2.5rem;
     }
 }

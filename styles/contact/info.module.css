@@ -1,0 +1,40 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact h5 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-family: 'IBMPlexSansLight';
+}
+
+.contact p {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.social h5 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    font-family: 'IBMPlexSansLight';
+}
+
+.socialLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.socialLinks li {
+    font-size: 2.8rem;
+    font-family: 'MottoSTD';
+}

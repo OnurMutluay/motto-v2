@@ -1,34 +1,47 @@
 .container {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 12rem;
+    margin-top: 22rem;
 }
 
 .container h3 {
-    width: 75%;
+    width: 100%;
     font-size: 4.2rem;
     line-height: 5.6rem;
     font-family: 'MottoSTD';
 }
 
 .container p {
-    width: 75%;
+    width: 100%;
     font-size: 2.6rem;
     line-height: 3.6rem;
 }
 
+@media screen and (max-width: 90em) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
 @media screen and (max-width: 40em) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .container h3 {
         width: 100%;
+        text-align: left;
+        font-size: 3.2rem;
+        line-height: 4.8rem;
     }
 
     .container p {
         width: 100%;
+        text-align: left;
     }
 }

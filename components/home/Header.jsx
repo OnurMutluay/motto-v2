@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className={styles.header}>
             <video className={styles.video} id="video" autoplay loop muted>
-                <source src="/video.mp4" type="video/mp4" />
+                <source src="/motto.mp4" type="video/mp4" />
             </video>
 
             <div className={styles.btn}>

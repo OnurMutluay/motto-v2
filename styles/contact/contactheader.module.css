@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16rem;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    height: 8rem;
+}
+
+.marquee h3 {
+    font-family: 'MottoSTD';
+    font-size: 8rem;
+}
+
+.description {
+    width: 90%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 40em) {
+    .description {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        margin-top: 6rem;
+    }
+
+    .marquee h3 {
+        font-family: 'MottoSTD';
+        font-size: 5.2rem;
+    }
+
+    .marquee {
+        gap: 4.5rem;
+    }
+}

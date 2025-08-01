@@ -1,12 +1,17 @@
 import Menu from '@/components/global/Menu';
 import SmoothScroll from '@/components/global/SmoothScroll';
 import '@/styles/globals.css';
+import '../styles/nprogress.css';
 import localFont from 'next/font/local';
-import { PagesProgressBar as ProgressBar } from 'next-nprogress-bar';
-import Footer from '@/components/global/Footer';
+import Router from 'next/router';
+import nProgress from 'nprogress';
 
 const MottoSTD = localFont({ src: './fonts/MottoSTD.ttf' });
 const IBMPlexSansLight = localFont({ src: './fonts/IBMPlexSans-Light.ttf' });
+
+Router.events.on('routeChangeStart', nProgress.start);
+Router.events.on('routeChangeError', nProgress.done);
+Router.events.on('routeChangeComplete', nProgress.done);
 
 export default function App({ Component, pageProps }) {
     return (

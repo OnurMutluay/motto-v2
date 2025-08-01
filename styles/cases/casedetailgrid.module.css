@@ -1,0 +1,53 @@
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-bottom: 5rem;
+}
+
+.two img {
+    width: 100%;
+}
+
+.three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-bottom: 5rem;
+}
+
+.three img {
+    width: 100%;
+}
+
+.colorized {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    margin-top: 15rem;
+}
+
+@media screen and (max-width: 90em) {
+    .two,
+    .three {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .two {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .three {
+        grid-template-columns: 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

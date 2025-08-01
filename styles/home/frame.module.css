@@ -1,11 +1,18 @@
 .marquee {
     display: flex;
     align-items: flex-start;
-    margin-top: 12rem;
+    margin-top: 22rem;
 }
 
 .marquee img {
-    border-radius: 1rem;
-    width: 35rem;
+    border-radius: 1.5rem;
+    zoom: 0.3;
     margin-left: 10rem;
+}
+
+@media screen and (max-width: 40em) {
+    .marquee img {
+        zoom: 0.2;
+        margin-left: 30rem;
+    }
 }

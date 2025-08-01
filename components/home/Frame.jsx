@@ -13,6 +13,8 @@ const Frame = () => {
                 <img src="/frame/frame_6.jpg" />
                 <img src="/frame/frame_7.jpg" />
                 <img src="/frame/frame_8.jpg" />
+                <img src="/frame/frame_9.jpg" />
+                <img src="/frame/frame_10.jpg" />
             </div>
         </Marquee>
     );

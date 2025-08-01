@@ -12,5 +12,24 @@
 }
 
 .container img {
-    zoom: 0.4;
+    zoom: 0.3;
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        gap: 12rem;
+        padding-left: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 16rem;
+    }
+
+    .container img {
+        zoom: 0.25;
+        margin: 0 auto;
+        align-self: center;
+    }
 }

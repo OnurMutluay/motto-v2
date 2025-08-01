@@ -5,14 +5,14 @@ const Frame = () => {
     return (
         <Marquee>
             <div className={styles.marquee}>
-                <img src="/studio/frame_1.png" />
-                <img src="/studio/frame_2.png" />
-                <img src="/studio/frame_3.png" />
-                <img src="/studio/frame_4.png" />
-                <img src="/studio/frame_5.png" />
-                <img src="/studio/frame_6.png" />
-                <img src="/studio/frame_7.png" />
-                <img src="/studio/frame_8.png" />
+                <img src="/studio/frame_1.jpg" />
+                <img src="/studio/frame_2.jpg" />
+                <img src="/studio/frame_3.jpg" />
+                <img src="/studio/frame_4.jpg" />
+                <img src="/studio/frame_5.jpg" />
+                <img src="/studio/frame_6.jpg" />
+                <img src="/studio/frame_7.jpg" />
+                <img src="/studio/frame_8.jpg" />
             </div>
         </Marquee>
     );

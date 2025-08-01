@@ -4,11 +4,11 @@
     gap: 8rem;
     background-color: var(--orange);
     width: 100%;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    margin-top: 15rem;
+    margin-top: 22rem;
 }
 
 .footer {
@@ -71,9 +71,25 @@
     align-items: center;
 }
 
+@media screen and (max-width: 90em) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .footer .contact {
+        margin-top: 4rem;
+    }
+
+    .footer .contact p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+}
+
 @media screen and (max-width: 82em) {
     .footer ul li a {
-        font-size: 3.8rem;
+        font-size: 5rem;
         color: var(--black);
     }
 }
@@ -90,6 +106,9 @@
     .links {
         flex-direction: column;
         gap: 3rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .links ul {
@@ -97,11 +116,10 @@
         justify-content: center;
         gap: 1.5rem;
     }
-}
 
-@media screen and (max-width: 65em) {
     .footer {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
 }

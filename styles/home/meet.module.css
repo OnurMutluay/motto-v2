@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    margin-top: 18rem;
+    margin-top: 22rem;
     justify-content: center;
     align-items: center;
 }
@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     gap: 5rem;
+    height: 8rem;
 }
 
 .marquee h3 {

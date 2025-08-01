@@ -1,0 +1,20 @@
+.header {
+    height: 85rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 8rem;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    height: 12rem;
+}
+
+.marquee h3 {
+    font-family: 'MottoSTD';
+    font-size: 12rem;
+}

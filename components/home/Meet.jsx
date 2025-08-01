@@ -6,7 +6,7 @@ import Button from '../ui/Button';
 const Meet = () => {
     return (
         <div className={styles.container}>
-            <Marquee>
+            <Marquee style={{ overflow: 'hidden !important' }}>
                 <div className={styles.marquee}>
                     <LogoIcon />
                     <h3>LET'S MEET</h3>

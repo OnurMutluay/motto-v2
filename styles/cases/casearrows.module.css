@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+@media screen and (max-width: 90em) {
+    .container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .arrowContainer h3 {
+        font-size: 3.2rem;
+        line-height: 5rem;
+        font-family: 'MottoSTD';
+    }
+
+    .arrowContainer p {
+        font-size: 1.6;
+        line-height: 2rem;
+    }
+}
